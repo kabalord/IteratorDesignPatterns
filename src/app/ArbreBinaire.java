@@ -23,9 +23,11 @@ public class ArbreBinaire implements Iterable<ArbreBinaire> {
 
 
     public String getEtiquette() {
+
         return etiquette;
     }
     public void setEtiquette(String etiquette) {
+
         this.etiquette = etiquette;
     }
 
@@ -42,6 +44,7 @@ public class ArbreBinaire implements Iterable<ArbreBinaire> {
     }
 
     public void setFilsDroit(ArbreBinaire filsDroit) {
+
         this.filsDroit = filsDroit;
     }
 
