@@ -6,13 +6,13 @@ public class App {
 
     public static void main(String[] args) {
 
-        ArbreBinaire Root = new ArbreBinaire("1");
-        Root.setFilsGauche(new ArbreBinaire("2"));
-        Root.setFilsDroit(new ArbreBinaire("3"));
-        Root.getFilsGauche().setFilsGauche(new ArbreBinaire("4"));
-        Root.getFilsGauche().setFilsDroit(new ArbreBinaire("5"));
-        Root.getFilsDroit().setFilsGauche(new ArbreBinaire("6"));
-        Root.getFilsDroit().setFilsDroit(new ArbreBinaire("7"));
+        ArbreBinaire Root = new ArbreBinaire("G");
+        Root.setFilsGauche(new ArbreBinaire("C"));
+        Root.setFilsDroit(new ArbreBinaire("F"));
+        Root.getFilsGauche().setFilsGauche(new ArbreBinaire("A"));
+        Root.getFilsGauche().setFilsDroit(new ArbreBinaire("B"));
+        Root.getFilsDroit().setFilsGauche(new ArbreBinaire("D"));
+        Root.getFilsDroit().setFilsDroit(new ArbreBinaire("E"));
         for (Iterator<ArbreBinaire> iterator = Root.iterator(); iterator.hasNext(); ) {
             ArbreBinaire element = iterator.next();
             System.out.println(element.getEtiquette());
